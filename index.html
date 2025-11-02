@@ -1,30 +1,53 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <title>Моя карта + геолокация + спутниковый вид</title>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <style>
-    html, body { width:100%; height:100%; margin:0; padding:0; }
-    #map { width:100%; height:100vh; }
-    #controls {
-      position:absolute; top:10px; left:10px;
-      background:white; padding:8px 12px;
-      border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.3);
-      font-family:sans-serif;
-      z-index:999;
-    }
-    button {
-      margin:3px;
-      cursor:pointer;
-      padding:6px 10px;
-      border:none;
-      border-radius:6px;
-      background:#f0f0f0;
-      transition:background .2s;
-    }
-    button:hover { background:#ddd; }
-  </style>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="«Плач Ярославны». Текст в переводе Николая Заболоцкого. «Слове о полку Игореве».">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>«Плач Ярославны» текст в переводе Николая Заболоцкого</title>
+	<link href="https://litera.su/learner/all-works/old-rus-literature/yaroslavnas-crying" rel="canonical">
+	<link href="/media/system/images/joomla-favicon.svg" rel="icon" type="image/svg+xml">
+	<link href="/media/system/images/joomla-favicon-pinned.svg" rel="mask-icon" color="#000">
+
+    <link href="/media/system/css/joomla-fontawesome.min.css?50daea" rel="stylesheet"><noscript><link href="/media/system/css/joomla-fontawesome.min.css?50daea" rel="stylesheet"></noscript>
+	<link href="/media/templates/site/cassiopeia/css/template.min.css?50daea" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia/css/global/colors_standard.min.css?50daea" rel="stylesheet">
+	<link href="/media/templates/site/cassiopeia/css/vendor/joomla-custom-elements/joomla-alert.min.css?0.4.1" rel="stylesheet">
+	<style>:root {
+		--hue: 214;
+		--template-bg-light: #f0f4fb;
+		--template-text-dark: #495057;
+		--template-text-light: #ffffff;
+		--template-link-color: var(--link-color);
+		--template-special-color: #001B4C;
+		
+	}</style>
+
+    <script src="/media/vendor/metismenujs/js/metismenujs.min.js?1.4.0" defer=""></script>
+	<script src="/media/templates/site/cassiopeia/js/mod_menu/menu-metismenu.min.js?50daea" defer=""></script>
+	<script src="/media/mod_menu/js/menu.min.js?50daea" type="module"></script>
+	<script type="application/json" class="joomla-script-options loaded">{"joomla.jtext":{"ERROR":"Ошибка","MESSAGE":"Сообщение","NOTICE":"Внимание","WARNING":"Предупреждение","JCLOSE":"Закрыть","JOK":"Ок","JOPEN":"Открыть"},"system.paths":{"root":"","rootFull":"https:\/\/litera.su\/","base":"","baseFull":"https:\/\/litera.su\/"},"csrf.token":"9ab310d4e16c2277239f03e61f045b31"}</script>
+	<script src="/media/system/js/core.min.js?2cb912"></script>
+	<script src="/media/templates/site/cassiopeia/js/template.min.js?50daea" type="module"></script>
+	<script src="/media/vendor/bootstrap/js/collapse.min.js?5.3.3" type="module"></script>
+	<script src="/media/system/js/messages.min.js?9a4811" type="module"></script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://litera.su/#/schema/BreadcrumbList/17","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://litera.su/","name":"Главная"}},{"@type":"ListItem","position":2,"item":{"@id":"https://litera.su/learner","name":"Учащимся"}},{"@type":"ListItem","position":3,"item":{"@id":"https://litera.su/learner/all-works","name":"Сочинение на тему"}},{"@type":"ListItem","position":4,"item":{"@id":"https://litera.su/learner/all-works/old-rus-literature","name":"Древнерусская лит-ра"}},{"@type":"ListItem","position":5,"item":{"name":"«Плач Ярославны» текст Н. Заболоцкого"}}]}</script>
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://litera.su/#/schema/Organization/base","name":"Литература в школе","url":"https://litera.su/"},{"@type":"WebSite","@id":"https://litera.su/#/schema/WebSite/base","url":"https://litera.su/","name":"Литература в школе","publisher":{"@id":"https://litera.su/#/schema/Organization/base"}},{"@type":"WebPage","@id":"https://litera.su/#/schema/WebPage/base","url":"https://litera.su/learner/all-works/old-rus-literature/yaroslavnas-crying","name":"«Плач Ярославны» текст в переводе Николая Заболоцкого","description":"«Плач Ярославны». Текст в переводе Николая Заболоцкого. «Слове о полку Игореве».","isPartOf":{"@id":"https://litera.su/#/schema/WebSite/base"},"about":{"@id":"https://litera.su/#/schema/Organization/base"},"inLanguage":"ru-RU","breadcrumb":{"@id":"https://litera.su/#/schema/BreadcrumbList/17"}},{"@type":"Article","@id":"https://litera.su/#/schema/com_content/article/549","name":"«Плач Ярославны» текст Н. Заболоцкого","headline":"«Плач Ярославны» текст Н. Заболоцкого","inLanguage":"ru-RU","articleSection":"Древнерусская лит-ра","isPartOf":{"@id":"https://litera.su/#/schema/WebPage/base"}}]}</script>
+
+
+<!--LiveInternet counter--><script>
+new Image().src = "https://counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,150))+
+";"+Math.random();</script><!--/LiveInternet-->
+
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async=""></script>
+
 </head>
 <body class="site com_content wrapper-static view-article no-layout no-task itemid-204">
     <header class="header container-header full-width">
